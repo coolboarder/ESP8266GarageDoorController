@@ -12,7 +12,10 @@ ESP8266HTTPUpdateServer httpUpdater;
 #define DEBUG_MSG(...)
 #endif
 
-static String WIFI_HOTSPOT_PW = "Snowboard88!";
+/* This is the password for the wifi hotspot that is created for initial configuration.
+ * Makesure the password is at least 8 caracters long and avoid strang characters.
+ */
+static String WIFI_HOTSPOT_PW = "p0wnMyGarage";
 
 enum DoorStates {Unknown = 0, Open = 1, Closing = 2, Closed = 3, Opening = 4}; 
 enum DoorStates doorState = Unknown;
@@ -115,7 +118,6 @@ unsigned long openingTimer = 0;
   digitalWrite(REL_PIN2,LOW); \
   Settings.currentState2 = true; \
 }
-
 
 byte mac[6];
 
@@ -252,7 +254,7 @@ void addHeader(boolean showMenu, String& str)
 
 void addFooter(String& str)
 {
-  str += F("<h6><a href=\"http://smartlife.tech\">smartlife.tech</a></h6></body></center>");
+  str += F("<h6>d[o_o}b</h6></body></center>");
 }
 
 void addMenu(String& str)
