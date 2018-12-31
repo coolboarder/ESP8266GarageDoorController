@@ -3,7 +3,7 @@
 ![Garge Door](images/garage.png)
 
 
-##Hardware
+## Hardware
 
 This project utilizes a NodeMcu V3 and a 2 relay modeule.  Both items can be sourced on Aliexpress.  
 
@@ -14,13 +14,13 @@ Female to Female Jumper Wires - $0.50
 
 
 
-##Flash
+## Flash
 
 https://github.com/nodemcu/nodemcu-flasher
 
-##SmartThings Device Handler
+## SmartThings Device Handler
 
 
 
-##SmartThings SmartAppp
+## SmartThings SmartAppp
 
