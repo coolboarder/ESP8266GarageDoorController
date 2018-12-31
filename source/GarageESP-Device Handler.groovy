@@ -1,5 +1,5 @@
 /**
- *  Copyright 2018 Tom Miller
+ *  Copyright 2018 Coolboarder
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
@@ -10,17 +10,17 @@
  *  on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License
  *  for the specific language governing permissions and limitations under the License.
  *
- *  Sonoff (Connect)
+ *  GarageESP
  *
- *  Author: Tom Miller
- *  Date: 2018-04-20
+ *  Author: Coolboarder
+ *  Date: 2018-12-31
  */
  
 import groovy.json.JsonSlurper
 import groovy.util.XmlSlurper
 
 metadata {
-	definition (name: "Garage Door Controller", namespace: "GarageESP", author: "Tom Miller") {
+	definition (name: "Garage Door Controller", namespace: "GarageESP", author: "coolboarder") {
 		capability "Actuator"
 		capability "Door Control"
         capability "Garage Door Control"
@@ -75,7 +75,6 @@ def unlock() {
 	log.debug "on Unlock()"
     def cmds = []
     cmds << getAction("/open")
-//	runIn(6, finishOpening)
     return cmds
 }
 
@@ -87,7 +86,6 @@ def lock() {
 	log.debug "on Lock()"
     def cmds = []
     cmds << getAction("/close")
-//	runIn(6, finishClosing)
     return cmds
 }
 
@@ -100,7 +98,6 @@ def open() {
 	log.debug "on OPEN()"
     def cmds = []
     cmds << getAction("/open")
-//	runIn(6, finishOpening)
     return cmds
 }
 
@@ -112,18 +109,7 @@ def close() {
 	log.debug "on CLOSE()"
     def cmds = []
     cmds << getAction("/close")
-//	runIn(6, finishClosing)
     return cmds
-}
-
-def finishOpening() {
-    // sendEvent(name: "door", value: "open")
-    // sendEvent(name: "contact", value: "open")
-}
-
-def finishClosing() {
-    // sendEvent(name: "door", value: "closed")
-    // sendEvent(name: "contact", value: "closed")
 }
 
 def installed() {
@@ -200,10 +186,6 @@ def parse(description) {
                     sendEvent(name: "contact", value: result.state)
                     events << createEvent(name: "lock", value: result.state == "closed" ? "locked" : "unlocked")
                  }
- //                if (result.type == "contact"){
-//                 	sendEvent(name: "door", value: result.state)
-//                    sendEvent(name: "contact", value: result.state)
-//                 }
             }
 
             if (result.containsKey("uptime")) {
@@ -471,36 +453,6 @@ def configuration_model()
 <Value type="password" byteSize="1" index="password" label="Password" min="" max="" value="" setting_type="preference" fw="">
 <Help>
 </Help>
-</Value>
-<Value type="list" byteSize="1" index="pos" label="Boot Up State" min="0" max="2" value="0" setting_type="lan" fw="">
-<Help>
-Default: Off
-</Help>
-    <Item label="Off" value="0" />
-    <Item label="On" value="1" />
-    <Item label="Previous" value="2" />
-</Value>
-<Value type="number" byteSize="1" index="autooff" label="Auto Off" min="0" max="65536" value="0" setting_type="lan" fw="">
-<Help>
-Automatically turn the switch off after this many seconds.
-Range: 0 to 65536
-Default: 0 (Disabled)
-</Help>
-</Value>
-<Value type="list" byteSize="1" index="switchtype" label="External Switch Type" min="0" max="1" value="0" setting_type="lan" fw="">
-<Help>
-If a switch is attached to GPIO 14.
-Default: Momentary
-</Help>
-    <Item label="Momentary" value="0" />
-    <Item label="Toggle" value="1" />
-</Value>
-<Value type="list" index="logLevel" label="Debug Logging Level?" value="0" setting_type="preference" fw="">
-<Help>
-</Help>
-    <Item label="None" value="0" />
-    <Item label="Reports" value="1" />
-    <Item label="All" value="99" />
 </Value>
 </configuration>
 '''

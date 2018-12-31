@@ -1,5 +1,5 @@
 /**
- *  Copyright 2018 Tom Miller
+ *  Copyright 2018 Coolboarder
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
  *  in compliance with the License. You may obtain a copy of the License at:
@@ -12,14 +12,14 @@
  *
  *  Sonoff (Connect)
  *
- *  Author: Tom Miller
- *  Date: 2018-04-20
+ *  Author: Coolboarder
+ *  Date: 2018-12-31
  */
 
 definition(
     name: "ESP8266 Garage Door (Connect)",
     namespace: "GarageESP",
-    author: "Tom Miller",
+    author: "Coolboarder",
     description: "Service Manager for ESP8266 Garage Door Controller",
     category: "Convenience",
     iconUrl:   "http://dnlgaragedoor.com/communities/5/000/001/520/795//images/6812448.png",
