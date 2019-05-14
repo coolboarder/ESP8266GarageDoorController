@@ -47,7 +47,7 @@ Install the GarageESP smart app in your SmartThings account.
 If you have your SmartThings paird with Alexa then you should be able to control and check the state of your garage door.  You can say:  
 "Alexa unlock garage door" - Alexa will force your to setup a secure passcode to unlock.  
 "Alexa lock garage door"  
-"Alexa is my garage door closed?"  
+"Alexa is my garage door locked?"  
 Alexa does not understand the phrases open garage door or close garage door currently.
 
 ## Apple HomeKit
