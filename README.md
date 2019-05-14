@@ -22,7 +22,13 @@ Flash the ESP8266GarageController.bin found in the root of this project to the N
 https://github.com/nodemcu/nodemcu-flasher
 Or use Arduino IDE to compile the source and flash to the NodeMcu.  The source code can be found under /source/ESP8266GarageControllerSource.
 
+Hold the flash button on the NodeMCU and press the rst button to put the NodeMCU into flash mode.
 
+![Flash Config](images/flash1.png)
+
+![Flash Config](images/flash2.png)
+
+![Flash Config](images/flash3.png)
 
 ## SmartThings Device Handler
 
