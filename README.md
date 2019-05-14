@@ -24,11 +24,11 @@ Or use Arduino IDE to compile the source and flash to the NodeMcu.  The source c
 
 Hold the flash button on the NodeMCU and press the rst button to put the NodeMCU into flash mode.
 
-![Flash Config](images/flash1.png)
+![Flash Config](images/Flash1.png)
 
-![Flash Config](images/flash2.png)
+![Flash Config](images/Flash2.png)
 
-![Flash Config](images/flash3.png)
+![Flash Config](images/Flash3.png)
 
 ## SmartThings Device Handler
 
