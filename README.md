@@ -31,7 +31,7 @@ Hold the flash button on the NodeMCU and press the rst button to put the NodeMCU
 
 ![Flash Config](images/Flash3.png)
 
-After flashing the NodeMCU will create a hotspot named GarageDoor.XXXX.  The hotspot will be password protected with the default password of "p0wnMyGarage".  This password can be changed in the source code and recompiled.
+After flashing the NodeMCU will create a hotspot named GarageDoor.XXXX.  The hotspot will be password protected with the default password of "p0wnMyGarage".  This password can be changed in the source code and recompiled.  If the hotspot does not come up, hold the flash button for 20 seconds then restart the NodeMCU.
 
 Once connected to the hotspot, a captive portal should pop up allowing you to configure the connection to your WiFi.  Click the Confirgure WiFi button.  It will take a few seconds for the next screen to load because the NodeMCU is scanning for avilabile WiFi networks.  Once loaded select the WiFi network, put in your password and click save.  You will be disconnected from the NodeMCU and it will connect to your WiFi.
 
