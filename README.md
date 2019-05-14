@@ -20,6 +20,7 @@ Female to Female Jumper Wires - $0.50
 ### Flash
 Flash the ESP8266GarageController.bin found in the root of this project to the NodeMcu using NodeMcu-flasher.
 https://github.com/nodemcu/nodemcu-flasher
+
 Or use Arduino IDE to compile the source and flash to the NodeMcu.  The source code can be found under /source/ESP8266GarageControllerSource.
 
 Hold the flash button on the NodeMCU and press the rst button to put the NodeMCU into flash mode.
