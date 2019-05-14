@@ -16,7 +16,7 @@ NodeMcu V3 - $2.33
 2 Relay Module - $1.09  
 Female to Female Jumper Wires - $0.50  
 
-##Installation
+## Installation
 ### Flash
 Flash the ESP8266GarageController.bin found in the root of this project to the NodeMcu using NodeMcu-flasher.
 https://github.com/nodemcu/nodemcu-flasher
