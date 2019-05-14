@@ -14,6 +14,7 @@ NodeMcu V3 - $2.33
 <img src="https://raw.githubusercontent.com/coolboarder/ESP8266GarageDoorController/master/images/relayboard.jpg" alt="2 Relay Board" width=200/>
 
 2 Relay Module - $1.09  
+Magnetic Contact Sensor - $1.00
 Female to Female Jumper Wires - $0.50  
 
 ## Installation
