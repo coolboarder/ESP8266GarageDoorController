@@ -4,17 +4,16 @@ This project utilizes ESP8266 based NodeMcu and relay board to control a garage 
 
 ## Hardware
 
-This project utilizes a NodeMcu V3 and a 2 relay modeule.  Both items can be sourced on Aliexpress.  
+This project utilizes a NodeMcu V3 and a 2 relay module.  Both items can be sourced on Aliexpress.  
 
 Costs
 NodeMcu V3 - $2.33  
 2 Relay Module - $1.09  
 Female to Female Jumper Wires - $0.50  
 
+<img src="https://raw.githubusercontent.com/coolboarder/ESP8266GarageDoorController/master/images/nodemcu.jpg" width=200 alt="NodeMcu"/>
 
-![NodeMcu](images/nodemcu.jpg)  
-
-![2 Relay Board](images/relayboard.jpg)  
+<img src="https://raw.githubusercontent.com/coolboarder/ESP8266GarageDoorController/master/images/relayboard.jpg" alt="2 Relay Board" width=200/>
 
 ## Flash
 
