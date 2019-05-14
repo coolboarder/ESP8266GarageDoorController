@@ -48,3 +48,15 @@ Install the GarageESP device handler in your SmartThings account.
 Install the GarageESP smart app in your SmartThings account.
 /source/SmartThingsGarageESP-SmartApp.groovy
 
+## Alexa
+If you have your SmartThings paird with Alexa then you should be able to control and check the state of your garage door.  You can say:
+"Alexa unlock garage door" - Alexa will force your to setup a secure passcode to unlock.
+"Alexa lock garage door"
+"Alexa is my garage door closed?"
+Alexa does not understand the phrases open garage door or close garage door currently.
+
+## Apple HomeKit
+If you have HomeBridge connected to SmartThings then your can use the following voice commands with Siri:
+"Hey Siri open garage door" - Siri will ask you to unlock your phone before opening.
+"Hey Siri close garage door"
+"Hey Siri is the garage door closed?"
