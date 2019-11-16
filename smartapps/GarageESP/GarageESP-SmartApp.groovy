@@ -22,9 +22,9 @@ definition(
     author: "Coolboarder",
     description: "Service Manager for ESP8266 Garage Door Controller",
     category: "Convenience",
-    iconUrl:   "http://dnlgaragedoor.com/communities/5/000/001/520/795//images/6812448.png",
-    iconX2Url: "http://dnlgaragedoor.com/communities/5/000/001/520/795//images/6812448.png",
-    iconX3Url: "http://dnlgaragedoor.com/communities/5/000/001/520/795//images/6812448.png"
+    iconUrl:   "https://raw.githubusercontent.com/coolboarder/ESP8266GarageDoorController/master/images/garage.png",
+    iconX2Url: "https://raw.githubusercontent.com/coolboarder/ESP8266GarageDoorController/master/images/garage.png",
+    iconX3Url: "https://raw.githubusercontent.com/coolboarder/ESP8266GarageDoorController/master/images/garage.png"
 )
 
 preferences {
