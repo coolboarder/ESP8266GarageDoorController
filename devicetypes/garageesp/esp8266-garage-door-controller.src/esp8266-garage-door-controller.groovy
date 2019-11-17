@@ -20,7 +20,7 @@ import groovy.json.JsonSlurper
 import groovy.util.XmlSlurper
 
 metadata {
-	definition (name: "ESP8266 Garage Door Controller", namespace: "GarageESP", author: "coolboarder") {
+	definition (name: "Garage Door Controller", namespace: "GarageESP", author: "coolboarder") {
 		capability "Actuator"
 		capability "Door Control"
         capability "Garage Door Control"
